@@ -1,5 +1,4 @@
 ﻿using Frazioni_IvanoDivano;
-
 namespace TestFrazioni_IvanoDivano;
 //(づ｡◕‿‿◕｡)づ
 public class FractionTest_IvanoDivano
@@ -55,10 +54,10 @@ public class FractionTest_IvanoDivano
     public void TestFractionSubtraction()
     {
 
-        var operand1 = new Fraction(4, 1);
-        var operand2 = new Fraction(33, 7);
+        var f1 = new Fraction(4, 1);
+        var f2 = new Fraction(33, 7);
 
-        var result = operand1 - operand2;
+        var result = f1 - f2;
 
         Assert.Multiple(() =>
         {
@@ -70,10 +69,10 @@ public class FractionTest_IvanoDivano
     [Test]
     public void TestFractionMultiplication()
     {
-        var operand1 = new Fraction(1, 11);
-        var operand2 = new Fraction(11, 1);
+        var f1 = new Fraction(1, 11);
+        var f2 = new Fraction(11, 1);
 
-        var result = operand1 * operand2;
+        var result = f1 * f2;
 
         Assert.Multiple(() =>
         {
@@ -98,11 +97,11 @@ public class FractionTest_IvanoDivano
     }
 
     [Test]
-    public void TestFractionMultiplicationWithZero([Random(-100, 100, 3)] int n, [Random(-100, 100, 1)] int d)
+    public void TestFractionMultiplicationWithZero([Random(-100, 100, 3)] int n, [Random(1, 100, 1)] int d)
     {
-        var operand1 = new Fraction(n, d);
+        var f = new Fraction(n, d);
 
-        var result = operand1 * 0;
+        var result = f * 0;
         Assert.Multiple(() =>
         {
             Assert.That(result.Numerator, Is.EqualTo(0));
@@ -113,9 +112,9 @@ public class FractionTest_IvanoDivano
     [Test]
     public void TestFractionDivisionWithZero()
     {
-        var operand = new Fraction(42, 1);
+        var f = new Fraction(42, 1);
 
-        Assert.That(() => operand / 0, Throws.ArgumentException);
+        Assert.That(() => f / 0, Throws.ArgumentException);
     }
 
     [Test]
