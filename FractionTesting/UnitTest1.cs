@@ -22,7 +22,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_frac.Numerator, Is.EqualTo(num));
-                Assert.That(_frac.Denumerator, Is.EqualTo(den));
+                Assert.That(_frac.Denominator, Is.EqualTo(den));
             });
         }
 
@@ -34,7 +34,7 @@ namespace UnitTest
         public void NumAndDenCoPrimesNotBothPositiveGetDenPositive(int num, int den)
         {
             _frac = new Fraction(num, den);
-            Assert.That(_frac.Denumerator,Is.GreaterThan(0));
+            Assert.That(_frac.Denominator,Is.GreaterThan(0));
         }
 
         [Test]
@@ -45,7 +45,7 @@ namespace UnitTest
         public void NumAndDenCoPrimesNotBothPositiveGetRightDen(int num, int den)
         {
             _frac = new Fraction(num, den);
-            Assert.That(_frac.Denumerator, Is.EqualTo(den < 0 ? -den : den));
+            Assert.That(_frac.Denominator, Is.EqualTo(den < 0 ? -den : den));
         }
 
         [Test]
@@ -69,7 +69,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_frac.Numerator, Is.EqualTo(nres));
-                Assert.That(_frac.Denumerator, Is.EqualTo(dres));
+                Assert.That(_frac.Denominator, Is.EqualTo(dres));
             });
         }
 
@@ -83,7 +83,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_frac.Numerator, Is.EqualTo(nres));
-                Assert.That(_frac.Denumerator, Is.EqualTo(dres));
+                Assert.That(_frac.Denominator, Is.EqualTo(dres));
             });
         }
 
@@ -105,7 +105,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_fracRes.Numerator, Is.EqualTo(nres));
-                Assert.That(_fracRes.Denumerator, Is.EqualTo(dres));
+                Assert.That(_fracRes.Denominator, Is.EqualTo(dres));
             });
         }
 
@@ -119,7 +119,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_fracRes.Numerator, Is.EqualTo(nres));
-                Assert.That(_fracRes.Denumerator, Is.EqualTo(dres));
+                Assert.That(_fracRes.Denominator, Is.EqualTo(dres));
             });
         }
 
@@ -133,7 +133,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_fracRes.Numerator, Is.EqualTo(nres));
-                Assert.That(_fracRes.Denumerator, Is.EqualTo(dres));
+                Assert.That(_fracRes.Denominator, Is.EqualTo(dres));
             });
         }
 
@@ -147,7 +147,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_fracRes.Numerator, Is.EqualTo(nres));
-                Assert.That(_fracRes.Denumerator, Is.EqualTo(dres));
+                Assert.That(_fracRes.Denominator, Is.EqualTo(dres));
             });
         }
 
@@ -161,7 +161,7 @@ namespace UnitTest
             Assert.Multiple(() =>
             {
                 Assert.That(_fracRes.Numerator, Is.EqualTo(nres));
-                Assert.That(_fracRes.Denumerator, Is.EqualTo(dres));
+                Assert.That(_fracRes.Denominator, Is.EqualTo(dres));
             });
         }
 
