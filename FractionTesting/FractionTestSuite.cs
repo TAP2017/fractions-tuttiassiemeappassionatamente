@@ -49,20 +49,6 @@ namespace FractionTestSuite
             });
         }
 
-        [Test]
-        public void TestFractionCheckIfDenominatorAbsoluteValueIsCorrect([Values(107, -34580)] int testDenominator)
-        {
-            var test = new Fraction(1, testDenominator);
-            Assert.That(Math.Abs(test.Denominator), Is.EqualTo(Math.Abs(testDenominator)));
-        }
-
-        [Test]
-        public void TestFractionCheckIfNumeratorValueIsCorrect([Values(9, -9)] int testNumerator)
-        {
-            var test = new Fraction(testNumerator, 8);
-            Assert.That(test.Numerator, Is.EqualTo(testNumerator));
-        }
-
         [TestCase(28, 70, 2, 5)]                    
         [TestCase(11, 9, 11, 9)]
         [TestCase(440, -842, -220, 421)]
