@@ -172,7 +172,8 @@ namespace UnitTest
         public void MulPositiveFractionByZero(int n, int d)
         {
             _frac = new Fraction(n, d);
-            Assert.That(_frac * 0, Is.EqualTo(0));
+            Fraction expected = 0;//added by Maura
+            Assert.That(_frac * 0, Is.EqualTo(expected));
         }
 
         [Test]

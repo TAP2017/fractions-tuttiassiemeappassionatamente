@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using Labo1;
+using FractionImplementation;
 using NUnit.Framework.Constraints;
 using NUnit.Framework.Internal;
 

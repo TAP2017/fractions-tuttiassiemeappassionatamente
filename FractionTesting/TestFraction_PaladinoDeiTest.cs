@@ -1,4 +1,4 @@
-using FRCTN;
+/*using FractionImplementation;
 
 namespace TestLab1Tap {
     public class Tests {
@@ -6,7 +6,7 @@ namespace TestLab1Tap {
         [SetUp]
         public void Setup() {
         }
-
+*/
         /*
          * I TestCase hanno come attributi:
          * AD ALTERNARE N VOLTE:
@@ -15,7 +15,7 @@ namespace TestLab1Tap {
          * la stringa di ritorno del ToString
          *  (quando il test dovrebbe ritornare un errore la stringa di controllo sarà vuota)
          */
-        [TestCase(10, 0, "")]
+/*        [TestCase(10, 0, "")]
         [TestCase(2, 4, "1/2")]
         [TestCase(1,-1,"-1")]
         public void TestCostructor(int x, int y, String str) {
@@ -28,10 +28,10 @@ namespace TestLab1Tap {
             }
         }
 
-
+*/
         /* I commenti delle righe 10-17 e della riga 26 valgono per tutti i Test */
 
-
+/*
         [TestCase(1,2,2,5,"9/10")]
         public void TestAdd(int x1, int y1, int x2, int y2, String str) {
             try {
@@ -117,13 +117,14 @@ namespace TestLab1Tap {
                 else Assert.Fail($"[ERROR-STRING]\n{e}");
             }
         }
-
+*/
         /*
          * Solo in questo TestCase gli attributi sono:
          * -il numeratore
          * -la stringa di verifica
          */
-        [TestCase(42, "42/1")]
+/*
+[TestCase(42, "42/1")]
         [TestCase(0, "0/1")]
         public void TestImplicit(int x, String str) {
             try {
@@ -146,4 +147,4 @@ namespace TestLab1Tap {
             }
         }
     }
-}
+}*/
