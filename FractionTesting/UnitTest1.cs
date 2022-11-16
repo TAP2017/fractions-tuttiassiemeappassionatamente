@@ -1,4 +1,4 @@
-using Fra;
+using FractionImplementation;
 using NUnit.Framework;
 
 namespace UnitTest

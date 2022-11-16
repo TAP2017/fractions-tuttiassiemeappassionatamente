@@ -1,4 +1,4 @@
-using Labo1;
+using FractionImplementation;
 
 namespace TestProjectLabo1
 {

@@ -1,4 +1,4 @@
-﻿using Frazioni_IvanoDivano;
+﻿using FractionImplementation;
 namespace TestFrazioni_IvanoDivano;
 //(づ｡◕‿‿◕｡)づ
 public class FractionTest_IvanoDivano
@@ -185,7 +185,7 @@ public class FractionTest_IvanoDivano
             Assert.That(f.Numerator, Is.EqualTo(0));
             Assert.That(f.Denominator, Is.EqualTo(1));
         });
-    }
+    }/*
     [Test]
     public void TestFractionToInt([Random(-100, 100, 5)] int n)
     {
@@ -200,5 +200,5 @@ public class FractionTest_IvanoDivano
 
         Assert.That( () => f.ToInt(), Throws.ArgumentException);
     }
-
+    */
 }

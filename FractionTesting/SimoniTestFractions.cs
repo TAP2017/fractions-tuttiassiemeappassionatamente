@@ -1,5 +1,5 @@
-using System.Net.WebSockets;
-using Lab1;
+/*using System.Net.WebSockets;
+using FractionImplementation;
 
 namespace TestLab1
 {
@@ -125,4 +125,4 @@ namespace TestLab1
             }
         }
     }
-}
+}*/

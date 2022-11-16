@@ -1,5 +1,5 @@
-namespace FractionTesting {
-    public class FractionTests {
+namespace LiveClassTests {
+    public class Tests {
         [SetUp]
         public void Setup() {
         }

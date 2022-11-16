@@ -1,6 +1,6 @@
 ﻿namespace FractionTesting;
 
-using Fraction;
+using FractionImplementation;
 using NUnit.Framework;
 
 public class Tests

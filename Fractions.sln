@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionImplementation", "FractionImplementation\FractionImplementation.csproj", "{8B0D9418-3109-4458-8B99-DB45D8BE1DCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionImplementation", "FractionImplementation\FractionImplementation.csproj", "{8B0D9418-3109-4458-8B99-DB45D8BE1DCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionTesting", "FractionTesting\FractionTesting.csproj", "{95043835-B365-4638-B460-571E7EA388A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionTesting", "FractionTesting\FractionTesting.csproj", "{95043835-B365-4638-B460-571E7EA388A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveClassTests", "LiveClassTests\LiveClassTests.csproj", "{F2C562EC-DE0A-4647-8993-64D31ED51527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{95043835-B365-4638-B460-571E7EA388A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95043835-B365-4638-B460-571E7EA388A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95043835-B365-4638-B460-571E7EA388A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C562EC-DE0A-4647-8993-64D31ED51527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C562EC-DE0A-4647-8993-64D31ED51527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C562EC-DE0A-4647-8993-64D31ED51527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C562EC-DE0A-4647-8993-64D31ED51527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

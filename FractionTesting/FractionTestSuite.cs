@@ -1,4 +1,4 @@
-using Fraction_Namespace;
+using FractionImplementation;
 
 namespace FractionTestSuite
 {
@@ -69,7 +69,7 @@ namespace FractionTestSuite
 
         private Fraction PrepareFractionClass(int numerator, int denominator)
         {
-            if (0 == denominator)       // Bypassing "denominator = 0" control to simplify tests with implicit casting (Tests that verify denominator value already exists)
+            if (0 == denominator)       // Bypassing "denominator = 0" control to simplify tests with implicit casting (RCTests that verify denominator value already exists)
                 return numerator;
             return new Fraction(numerator, denominator);
         }

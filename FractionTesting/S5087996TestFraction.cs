@@ -90,8 +90,8 @@ namespace S5087996TestFractions
             var fr1 = new Fraction(1, 2);
             Assert.Multiple(
                 () => {
-                    Assert.That(fr1, Is.Not.EqualTo(1));
-                    Assert.False(fr1==1);
+                    Assert.That((int)fr1, Is.Not.EqualTo(1));
+                    Assert.False((int)fr1==1);
                 }
             );
         }

@@ -1,7 +1,7 @@
-using FractionClass;
+using FractionImplementation;
 
 namespace TestFraction {
-    public class Tests {
+    public class RCTests {
 
         [Test, Sequential]
         public void ConstructorWithoutNormalization([Values(1)] int numerator, [Values(2)] int denominator, [Values(1)] int expectedNumerator, [Values(2)] int expectedDenominator) {

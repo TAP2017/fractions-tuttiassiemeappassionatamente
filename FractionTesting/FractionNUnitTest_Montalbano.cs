@@ -1,4 +1,4 @@
-using Laboratorio1;
+using FractionImplementation;
 
 namespace TestFraction
 {
@@ -120,7 +120,7 @@ namespace TestFraction
         [Test]
         public void Fraction_CanBeEqualToInt() {
             var f1 = new Fraction(5, 1);
-            Assert.That(f1 == 5, Is.True);
+            Assert.That((int)f1 == 5, Is.True);
         }
 
         [Test]

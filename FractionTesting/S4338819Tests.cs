@@ -1,16 +1,16 @@
-using FractionNS;
+using FractionImplementation;
 
 namespace TestFraction
 {
     public class Tests
     {
-        private Fraction fraction;
-
+        //private Fraction fraction;
+        /*
         [SetUp]
         public void Setup()
         {
             fraction = new Fraction();
-        }
+        }*/
 
         [Test]
         public void CorrectNumeratorAndDenominator()
@@ -217,10 +217,10 @@ namespace TestFraction
         [TestCase(35,1)]
         [TestCase(12,1)]
         [TestCase(16,1)]
-        public void ExplicitFractionToInt(int numerator, int denominator)
-        {
-            fraction.Numerator = numerator;
-            fraction.Denominator = denominator;
+        public void ExplicitFractionToInt(int numerator, int denominator) {
+            Fraction fraction = new Fraction(numerator, denominator);
+            //fraction.Numerator = numerator;
+            //fraction.Denominator = denominator;
             int result = (int)fraction;
             Assert.That(result, Is.EqualTo(numerator));
         }
@@ -228,8 +228,9 @@ namespace TestFraction
         [Test]
         public void ExplicitConversionToIntThrows()
         {
-            fraction.Numerator = 42;
-            fraction.Denominator = 11;
+            Fraction fraction = new Fraction(42, 11);
+            //fraction.Numerator = numerator;
+            //fraction.Denominator = denominator;
             int res = 0;
             Assert.That(() => res = (int)fraction, Throws.InstanceOf<ArgumentException>());
         }
