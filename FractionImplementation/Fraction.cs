@@ -57,12 +57,6 @@
             if (ReferenceEquals(this, other)) return true;
             return Numerator == other.Numerator && Denominator == other.Denominator;
         }
-        public static bool operator ==(Fraction? left, Fraction? right) {
-            return Equals(left, right);
-        }
-        public static bool operator !=(Fraction? left, Fraction? right) {
-            return !Equals(left, right);
-        }
         public override bool Equals(object? obj) {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
