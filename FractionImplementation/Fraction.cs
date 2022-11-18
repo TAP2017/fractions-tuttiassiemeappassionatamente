@@ -68,12 +68,12 @@
         conversione esplicita da frazione a intero, che solleva un'eccezione 
         se il denominatore in forma normale è diverso da 1; */
         public static explicit operator int(Fraction f) {
-            return 0;
+            return f.Denominator==1?f.Numerator:throw new InvalidOperationException($"impossible conversion to int as denominator is {f.Denominator}");
         }
         /*
        conversione implicita da intero a frazione (con denominatore =1);  */
         public static implicit operator Fraction(int n) {
-            return null!;
+            return new Fraction(n,1);
         }
 
 

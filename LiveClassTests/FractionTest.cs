@@ -183,5 +183,27 @@ namespace FractionTesting {
             var actual = new Fraction(inNum, 1).ToString();
             Assert.That(actual, Is.EqualTo(expected));
         }
+        [TestCase(363)]
+        [TestCase(0)]
+        [TestCase(-7464)]
+        public void ExplicitConversionOk(int expected) {
+            var actual = (int) new Fraction(expected, 1);
+            Assert.That(actual,Is.EqualTo(expected));
+        }
+        [TestCase(45, 77)]
+        [TestCase(-63, 74)]
+        public void ExplicitConversionThrows(int inNum, int inDen) {
+            var receiver = new Fraction(inNum, inDen);
+            Assert.That(() => {
+                var x = (int)receiver;},Throws.TypeOf<InvalidOperationException>());
+        }
+        [TestCase(363)]
+        [TestCase(0)]
+        [TestCase(-7464)]
+        public void ImplicitConversionOk(int expected) {
+            Fraction actual = expected;
+            Assert.Multiple(()=>{ Assert.That(actual.Numerator, Is.EqualTo(expected)); Assert.That(actual.Denominator, Is.EqualTo(1)); });
+            
+        }
     }
 }
