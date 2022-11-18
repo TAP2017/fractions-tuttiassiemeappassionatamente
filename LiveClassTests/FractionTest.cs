@@ -170,5 +170,18 @@ namespace FractionTesting {
                 Assert.That(hashCode,Is.EqualTo(f2.GetHashCode()));
             }
         }
+        [TestCase(3, 5, "3/5")]
+        [TestCase(-3, 52, "-3/52")]
+        public void ToStringOnProperFractionsOk(int inNum, int inDen, string expected) {
+            var actual = new Fraction(inNum, inDen).ToString();
+            Assert.That(actual,Is.EqualTo(expected));
+        }
+        [TestCase(3435, "3435")]
+        [TestCase(-452, "-452")]
+        [TestCase(0, "0")]
+        public void ToStringOnIntegersAsFractionsOk(int inNum, string expected) {
+            var actual = new Fraction(inNum, 1).ToString();
+            Assert.That(actual, Is.EqualTo(expected));
+        }
     }
 }
